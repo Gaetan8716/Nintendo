@@ -6,12 +6,14 @@ public class Achat {
 
 	private Jeu jeu;
 	private LocalDate date;
+	private double prix; 
 	private Boutique boutique;
-	
-	
-	public Achat(Jeu jeu, LocalDate date, Boutique boutique) {
+
+
+	public Achat(Jeu jeu, LocalDate date, double prix, Boutique boutique) {
 		this.jeu = jeu;
 		this.date = date;
+		this.prix = prix;
 		this.boutique = boutique;
 	}
 
@@ -46,11 +48,21 @@ public class Achat {
 	}
 
 
+	public double getPrix() {
+		return prix;
+	}
+
+
+	public void setPrix(double prix) {
+		this.prix = prix;
+	}
+
+
 	@Override
 	public String toString() {
-		return "Achat [jeu=" + jeu + ", date=" + date + ", boutique=" + boutique + "]";
+		return "Achat [jeu=" + jeu + ", date=" + date + ", prix=" + prix + ", boutique=" + boutique + "]";
 	}
-	
-	
+
+
 	
 }
