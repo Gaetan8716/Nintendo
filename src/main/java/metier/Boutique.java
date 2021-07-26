@@ -8,6 +8,13 @@ private String nom;
 private String Adresse;
 private List Jeux;
 
+
+public Boutique(String nom, String adresse, List jeux) {
+	super();
+	this.nom = nom;
+	Adresse = adresse;
+	Jeux = jeux;
+}
 public String getNom() {
 	return nom;
 }

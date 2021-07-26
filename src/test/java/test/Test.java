@@ -1,8 +1,12 @@
 package test;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
+import metier.Achat;
+import metier.Boutique;
 import metier.Client;
 import metier.Console;
 import metier.Hybride;
@@ -38,7 +42,13 @@ public class Test {
 		jeux.add(j4);
 		jeux.add(j5);
 		
-		Client c1 = new Client("Testi", "Testou", (List) jeux.get(3));
+		Boutique boutique = new Boutique("Microbatard", "Rue de l'Arnaque", jeux);
+		LocalDate ld = LocalDate.parse("2021-11-30");
+		Achat article1 = new Achat(j1, ld , 60, boutique);
+		List <Achat> listeDAchat = new ArrayList() ;
+		listeDAchat.add(article1);
+
+		Client c1 = new Client("Testi", "Testou", listeDAchat);
 	}
 
 }
