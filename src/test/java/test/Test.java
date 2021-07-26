@@ -5,7 +5,10 @@ import java.util.List;
 
 import metier.Client;
 import metier.Console;
+import metier.Hybride;
 import metier.Jeu;
+import metier.Portable;
+import metier.Salon;
 
 public class Test {
 
@@ -13,9 +16,9 @@ public class Test {
 		
 		List <Console> consoles = new ArrayList();
 		
-		Console ds = new Console("DS");
-		Console wii = new Console("WII");
-		Console swtch = new Console("Switch");
+		Portable ds = new Portable("DS");
+		Salon wii = new Salon("WII");
+		Hybride swtch = new Hybride("Switch");
 		
 		consoles.add(ds);
 		consoles.add(wii);
@@ -34,7 +37,6 @@ public class Test {
 		jeux.add(j3);
 		jeux.add(j4);
 		jeux.add(j5);
-
 		
 		Client c1 = new Client("Testi", "Testou", (List) jeux.get(3));
 	}
