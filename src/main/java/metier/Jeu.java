@@ -5,11 +5,11 @@ import java.util.List;
 public class Jeu {
 
 	private String titre;
-	private Console console;
+	private List console;
 	
 	
 	
-	public Jeu(String titre, Console console) {
+	public Jeu(String titre, List console) {
 		this.titre = titre;
 		this.console = console;
 	}
@@ -28,13 +28,13 @@ public class Jeu {
 
 
 
-	public Console getConsole() {
+	public List getConsole() {
 		return console;
 	}
 
 
 
-	public void setConsole(Console console) {
+	public void setConsole(List console) {
 		this.console = console;
 	}
 
