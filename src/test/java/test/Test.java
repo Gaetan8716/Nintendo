@@ -34,7 +34,6 @@ public class Test {
 		jeux.add(j3);
 		jeux.add(j4);
 		jeux.add(j5);
-
 		
 		Client c1 = new Client("Testi", "Testou", (List) jeux.get(3));
 	}
