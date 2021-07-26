@@ -3,6 +3,7 @@ package test;
 import java.util.ArrayList;
 import java.util.List;
 
+import metier.Client;
 import metier.Console;
 import metier.Jeu;
 
@@ -18,7 +19,9 @@ public class Test {
 		
 		consoles.add(ds);
 		consoles.add(wii);
-		consoles.add(swtch);		
+		consoles.add(swtch);
+		
+		List <Jeu> jeux = new ArrayList();
 		
 		Jeu j1 = new Jeu("Mario_Kart", (List) consoles.get(0));
 		Jeu j2 = new Jeu("Pokemon", (List) consoles.get(1));
@@ -26,8 +29,14 @@ public class Test {
 		Jeu j4 = new Jeu("Smash Bros", (List) consoles.get(2));
 		Jeu j5 = new Jeu("Metroid", (List) consoles.get(0));
 		
-		Client c1 = new Client("Testi", "Testou", )
-			
+		jeux.add(j1);
+		jeux.add(j2);
+		jeux.add(j3);
+		jeux.add(j4);
+		jeux.add(j5);
+
+		
+		Client c1 = new Client("Testi", "Testou", (List) jeux.get(3));
 	}
 
 }
