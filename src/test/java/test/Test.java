@@ -2,7 +2,6 @@ package test;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import metier.Achat;
@@ -20,9 +19,13 @@ public class Test {
 		
 		List <Console> consoles = new ArrayList();
 		
-		Portable ds = new Portable("DS");
-		Salon wii = new Salon("WII");
-		Hybride swtch = new Hybride("Switch");
+		LocalDate dateDs = LocalDate.parse("2004-11-21");
+		LocalDate dateWii = LocalDate.parse("2006-11-19");
+		LocalDate dateSwtch = LocalDate.parse("2021-10-08");
+		
+		Portable ds = new Portable("DS",60,dateDs);
+		Salon wii = new Salon("WII",120,dateWii);
+		Hybride swtch = new Hybride("Switch",450,dateSwtch);
 		
 		consoles.add(ds);
 		consoles.add(wii);
